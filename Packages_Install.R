@@ -65,6 +65,9 @@ install.packages(c("shiny","shinythemes"))
   install.packages("testthat")
   install.packages("shinytest2")
 
+#Workflow Package - project setup and development
+install.packages("usethis")
+
 #Pins - Publish data sets, models, and other R objects
 install.packages("pins")
 
