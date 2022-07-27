@@ -15,6 +15,13 @@ install.packages("sqldf")
 install.packages("survival")
 install.packages("survminer")
 
+#Read in files
+
+  #Parquet
+  install.packages("arrow")
+  #Fast csv
+  install.packages("vroom")
+
 #violin plot
 install.packages("vioplot")
 #forestplot package
@@ -45,6 +52,14 @@ install.packages("descr")
 #Live update tables with word doc add on
 install.packages("tidystats")
 
+#Emojis
+install.packages("emo")
+
+#Shiny
+install.packages(c("shiny","shinythemes"))
+  
+  #Custom Loading Screens
+  install.packages("waiter")
 
 #GIS
 install.packages("rgdal")
