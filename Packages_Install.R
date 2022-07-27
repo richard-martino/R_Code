@@ -61,6 +61,13 @@ install.packages(c("shiny","shinythemes"))
   #Custom Loading Screens
   install.packages("waiter")
 
+  #Test Shiny Applications
+  install.packages("testthat")
+  install.packages("shinytest2")
+
+#Pins - Publish data sets, models, and other R objects
+install.packages("pins")
+
 #GIS
 install.packages("rgdal")
 install.packages("sp")
