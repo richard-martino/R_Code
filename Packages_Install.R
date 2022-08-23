@@ -1,5 +1,8 @@
 #Packages to install
 
+#Set WD
+install.packages("Here")
+
 install.packages("Hmisc")#if a package has trouble loading, you will need to install it. Do this only once
 install.packages("epitools")
 install.packages("Epi")
