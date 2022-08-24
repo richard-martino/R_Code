@@ -1,2 +1,3 @@
 # R_Code
-R Code I commonly use
+
+Notes to self to help with work in R
