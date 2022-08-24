@@ -1,29 +1,72 @@
 #Packages to install
+#Last Updated: 2022-08-24
+
+#Install or load other packages
+install.packages("pacman")
 
 #Set WD
 install.packages("Here")
 
-install.packages("Hmisc")#if a package has trouble loading, you will need to install it. Do this only once
-install.packages("epitools")
-install.packages("Epi")
-install.packages("sas7bdat") 
-install.packages("gmodels")
-install.packages("abind")
-install.packages("stargazer")
-install.packages("car")
-install.packages("epicalc", repos = "http://medipe.psu.ac.th/epicalc") 
+#Tidyverse
 install.packages("tidyverse")
-install.packages("haven")
-install.packages("sqldf")
+
+#Epi Tools
 install.packages("survival")
 install.packages("survminer")
+install.packages("epicalc", repos = "http://medipe.psu.ac.th/epicalc") 
+install.packages('car')
+install.packages("stargazer") #Well-Formatted Regression and Summary Statistics Tables
+install.packages("gmodels")
+install.packages("epitools")
+install.packages("Epi")
 
 #Read in files
+
+  install.packages("fs") #cross-platform, uniform interface to file system operations
+  
+#Reads SAS, SPSS, STATA
+  install.packages("haven")  #tidyverse package
 
   #Parquet
   install.packages("arrow")
   #Fast csv
   install.packages("vroom")
+
+  #Connect to SQL database
+  install.packages("odbc")
+  install.packages("DBI")
+  install.packages("RODBC")
+
+  #SQL for R databases
+  install.packages("sqldf")
+
+#Data and program tools
+
+  install.packages("janitor")
+  install.packages("purr") #part of tidyverse
+  install.packages("sjmisc")
+  install.packages('abind') #Combine Multidimensional Arrays
+  install.packages("Hmisc")
+
+#Strings
+
+  install.packages("glue") #part of tidyverse - handy for sql and other long strings
+  install.packages("stringr") #part of tidyverse
+  install.packages("strex")
+
+#Themes
+
+  install.packages("thematic") #themes for ggplot2, shiny, etc.
+  install.packages("bslib") #Bootstrap Sass themes
+
+#Plots
+  
+  install.packages("ggplot2")
+  
+  #ggplot2 formatting
+  install.packages("ggpubr")
+  #ggplot2 scales
+  install.packages("scales") #installed with ggplot2
 
 #violin plot
 install.packages("vioplot")
@@ -38,11 +81,15 @@ install.packages("zipcodeR")
 #Dates
 install.packages("lubridate")
 
+#Quick tables
+install.packages("tidytable")
+
 #Pretty tables
 install.packages("gt")
-install.packages("tidyverse")
 install.packages("glue")
 install.packages("desctable")
+install.packages("flextable")
+install.packages("kableExtra")
 
 #Table 1 descriptives
 install.packages("tableone")
@@ -57,6 +104,12 @@ install.packages("tidystats")
 
 #Emojis
 install.packages("emo")
+
+#RMarkdown
+install.packages("rmarkdown")
+
+  #RMarkdown Web Publishing Format
+  install.packages("distill")
 
 #Shiny
 install.packages(c("shiny","shinythemes"))
@@ -79,13 +132,11 @@ install.packages("rgdal")
 install.packages("sp")
 install.packages("rgeos")
 
+#Other interesting packages
+install.packages("testthat")
+
 ##### Load these packages all the time
-library(foreign)
-library(Hmisc)
-library(epicalc)
-library(sas7bdat)
 library(tidyverse)
-library(haven)
-library(sqldf)
-library(gt)
-library(glue)
+library(lubridate)
+library(vroom)
+library(here)
