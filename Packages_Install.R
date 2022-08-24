@@ -54,10 +54,11 @@ install.packages("Epi")
   install.packages("stringr") #part of tidyverse
   install.packages("strex")
 
-#Themes
+#Themes and Colors
 
   install.packages("thematic") #themes for ggplot2, shiny, etc.
   install.packages("bslib") #Bootstrap Sass themes
+  install.packages('RColorBrewer')
 
 #Plots
   
