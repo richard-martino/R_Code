@@ -19,6 +19,8 @@ install.packages("stargazer") #Well-Formatted Regression and Summary Statistics 
 install.packages("gmodels")
 install.packages("epitools")
 install.packages("Epi")
+devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
+
 
 #Read in files
 
