@@ -71,6 +71,9 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
   #ggplot2 scales
   install.packages("scales") #installed with ggplot2
 
+#graphics device for R that is accessible via network protocols
+install.packages("httpgd")
+
 #violin plot
 install.packages("vioplot")
 #forestplot package
