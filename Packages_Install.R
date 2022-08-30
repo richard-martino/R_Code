@@ -141,6 +141,9 @@ install.packages("rgeos")
 #Other interesting packages
 install.packages("testthat")
 
+#Python for R
+install.packages("reticulate")
+
 ##### Load these packages all the time
 library(tidyverse)
 library(lubridate)
