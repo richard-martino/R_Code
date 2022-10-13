@@ -138,7 +138,6 @@ install.packages("rgdal")
 install.packages("sp")
 install.packages("rgeos")
 install.packages("leaflet")
-install.packages("openadds") #Open free addresses
 
 #Other interesting packages
 install.packages("testthat")
