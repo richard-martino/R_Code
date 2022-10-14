@@ -32,6 +32,9 @@ gsub("^.*,", "", dataframe)
 ##All Lower
 datacheck2 <- datacheck %>% mutate(across(where(is.character),tolower))
 
+#Read in csv as character
+read_csv(file, col_types = cols(.default = "c"))
+
 #Read in latest file
   
   data_files <- file.info(list.files("PATH TO FOLDER", full.names = T))
