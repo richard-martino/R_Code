@@ -2,6 +2,7 @@
 #Last Updated: 2022-08-24
 
 #Install or load other packages
+install.packages("pak")
 install.packages("pacman")
 
 #Set WD
@@ -54,7 +55,8 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
 
   install.packages("glue") #part of tidyverse - handy for sql and other long strings
   install.packages("stringr") #part of tidyverse
-  install.packages("strex")
+  install.packages("stringi")
+  install.packages("strex") #Other string functions
 
 #Themes and Colors
 
