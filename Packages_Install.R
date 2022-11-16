@@ -20,6 +20,7 @@ install.packages("stargazer") #Well-Formatted Regression and Summary Statistics 
 install.packages("gmodels")
 install.packages("epitools")
 install.packages("Epi")
+install.packages("devtools")
 devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
 
 
@@ -140,6 +141,9 @@ install.packages("rgdal")
 install.packages("sp")
 install.packages("rgeos")
 install.packages("leaflet")
+install.packages("rmapshaper")
+install.packages("stars")
+install.packages("ozmaps")
 
 #Other interesting packages
 install.packages("testthat")
