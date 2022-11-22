@@ -39,7 +39,7 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
   #Connect to SQL database
   install.packages("odbc")
   install.packages("DBI")
-  install.packages("RODBC")
+  install.packages("RODBC") #Slower than odbc
 
   #SQL for R databases
   install.packages("sqldf")
