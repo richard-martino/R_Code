@@ -69,10 +69,30 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
   
   install.packages("ggplot2")
   
+  #Highlight lines and points
+  install.packages("gghighlight")
+
+  #Repel overlapping text labels
+  install.packages("ggrepel")
+  #Fit texts into boxes
+  install.packages("ggfittext")
+
+  #ggplot2 arranging plots
+  install.packages("patchwork")
+  install.packages("cowplot")
   #ggplot2 formatting
   install.packages("ggpubr")
   #ggplot2 scales
   install.packages("scales") #installed with ggplot2
+
+  #Network and other relational data structures
+  install.packages("ggraph")
+  install.packages("tidygraph")
+  install.packages("networkD3")
+
+  #Time series - Javascript
+  install.packages("dygraphs")
+  
 
 #graphics device for R that is accessible via network protocols / easily view graphs in browsers and download
 install.packages("httpgd")
@@ -137,6 +157,7 @@ install.packages("usethis")
 install.packages("pins")
 
 #GIS
+install.packages("sf")
 install.packages("rgdal")
 install.packages("sp")
 install.packages("rgeos")
