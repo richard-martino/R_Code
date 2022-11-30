@@ -63,7 +63,13 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
 
   install.packages("thematic") #themes for ggplot2, shiny, etc.
   install.packages("bslib") #Bootstrap Sass themes
-  install.packages('RColorBrewer')
+  install.packages("RColorBrewer")
+
+  install.packages("colorBlindness")
+  install.packages("dichromat")
+
+ #Labels
+  install.packages('directlabels')
 
 #Plots
   
