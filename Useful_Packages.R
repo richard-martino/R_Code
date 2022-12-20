@@ -85,7 +85,10 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
 
   #ggplot2 arranging plots
   install.packages("patchwork")
+  #ggplot2 arrange plots and themes
   install.packages("cowplot")
+  #ggplot2 theme
+  install.packages('ggthemes', dependencies = TRUE)
   #ggplot2 formatting
   install.packages("ggpubr")
   #ggplot2 scales
