@@ -90,6 +90,11 @@ devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
   install.packages("ggpubr")
   #ggplot2 scales
   install.packages("scales") #installed with ggplot2
+  #ggplot2 Use multiple fill and colour scales 
+  install.packages("ggnewscale") 
+  #ggplot2 hex An R Package with binning and plotting functions for hexagonal bins
+  install.packages("hexbin") 
+  
 
   #Network and other relational data structures
   install.packages("ggraph")
