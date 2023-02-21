@@ -6,7 +6,7 @@ install.packages("pak")
 install.packages("pacman")
 
 #Set WD
-install.packages("Here")
+install.packages("here")
 
 #Tidyverse
 install.packages("tidyverse")
