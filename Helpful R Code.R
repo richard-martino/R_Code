@@ -161,3 +161,8 @@ revalue(data6$column, c("1"="one", "2"="two"))
       column == 7 | column2 == 8 | column3 == 9 ~ NA_real_,
     )))
 
+#Import Stata with value labels
+
+data <- read_dta()
+
+data <- haven::as_factor(data)
