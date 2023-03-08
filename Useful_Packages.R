@@ -22,7 +22,7 @@ install.packages("epitools")
 install.packages("Epi")
 install.packages("devtools")
 devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
-
+install.packages("naniar") # missing data tool and visualisation
 
 #Read in files
 
