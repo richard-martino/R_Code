@@ -23,6 +23,8 @@ install.packages("Epi")
 install.packages("devtools")
 devtools::install_github("EvaMaeRey/ggxmean") #ggplot extension
 install.packages("naniar") # missing data tool and visualisation
+# install.packages("remotes")
+remotes::install_github("r4epi/sitrep") #Outbreak and Survey templates based on MSF templates
 
 #Read in files
 
@@ -97,7 +99,8 @@ install.packages("naniar") # missing data tool and visualisation
   install.packages("ggnewscale") 
   #ggplot2 hex An R Package with binning and plotting functions for hexagonal bins
   install.packages("hexbin") 
-  
+  #Ridgeline plots
+  install.packages("ggridges")
 
   #Network and other relational data structures
   install.packages("ggraph")
