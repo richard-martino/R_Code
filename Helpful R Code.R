@@ -161,8 +161,25 @@ revalue(data6$column, c("1"="one", "2"="two"))
       column == 7 | column2 == 8 | column3 == 9 ~ NA_real_,
     )))
 
-#Import Stata with value labels
+# Import Stata with value labels
 
 data <- read_dta()
 
 data <- haven::as_factor(data)
+
+# Dealing with factor imports
+
+# Convert specific variables to factor
+data %>%
+    mutate_at(
+        vars('agegroup'),
+        funs(as_factor(.)))
+
+  # Other option - remove labels from specific variables then create factors for the rest
+  # Drop labels from continuous variables
+    data <- data |> 
+         mutate(across(c(var1,var2), ~ zap_labels(.)))
+
+    # Assign labels and turn into factor
+    data2 <- haven::as_factor(data)
+
