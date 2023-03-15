@@ -1,5 +1,4 @@
 #Useful code
-#Last Updated: 2022-08-24
 
 #Select first row of group
 df5 <- df4  %>% group_by(`First Name`,`Last Name`,DOB) %>% 
