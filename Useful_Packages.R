@@ -137,6 +137,7 @@ install.packages("desctable")
 install.packages("flextable")
 install.packages("kableExtra")
 install.packages("gtsummary")
+install.packages("finalfit")
 
 #Table 1 descriptives
 install.packages("tableone")
