@@ -182,3 +182,13 @@ data %>%
     # Assign labels and turn into factor
     data2 <- haven::as_factor(data)
 
+
+# Unfill function
+
+unfill_vec <- function(x) {
+  same <- x == dplyr::lag(x)
+  ifelse(!is.na(same) & same, NA, x)
+}
+
+x <- c("A","A","A","B","B","C","C")
+unfill_vec(x)
