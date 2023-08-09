@@ -1,6 +1,12 @@
 #Packages to install
 #Last Updated: 2022-08-24
 
+# Project guide
+## Use git and projects
+install.packages("here")
+install.packages("renv")
+
+
 #Install or load other packages
 install.packages("pak")
 install.packages("pacman")
@@ -152,6 +158,9 @@ install.packages("tidystats")
 
 #Emojis
 install.packages("emo")
+
+# Icons
+install.packages("fontawesome")
 
 #RMarkdown
 install.packages("rmarkdown")
