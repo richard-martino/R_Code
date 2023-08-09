@@ -109,6 +109,7 @@ remotes::install_github("r4epi/sitrep") #Outbreak and Survey templates based on 
   install.packages("ggridges")
 
   #Network and other relational data structures
+  install.packages("DiagrammeR")
   install.packages("ggraph")
   install.packages("tidygraph")
   install.packages("networkD3")
