@@ -1,5 +1,10 @@
 #Useful code
 
+# Reorder x by another value
+data |>  arrange(desc(value)) |>  
+  mutate(x = factor(x, levels = unique(x))) |> 
+  ggplot()
+
 #Select first row of group
 df5 <- df4  %>% group_by(`First Name`,`Last Name`,DOB) %>% 
   arrange(desc(LOS2), .by_group = TRUE) %>% filter(row_number()==1)
