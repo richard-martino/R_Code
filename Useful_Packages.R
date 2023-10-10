@@ -197,6 +197,7 @@ install.packages("ozmaps")
 
 #Other interesting packages
 install.packages("testthat")
+install.packages("blastula") #Sending an email
 
 #Python for R
 install.packages("reticulate")
