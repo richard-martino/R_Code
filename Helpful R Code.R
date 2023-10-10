@@ -1,6 +1,41 @@
 #Useful code
 
-# Reorder x by another value
+# Create multiple quarto parameter reports
+reports <- data |>
+  dplyr::distinct(farmer, year) |>
+  dplyr::mutate(
+    output_file = paste0(
+      year, "_", gsub(" ", "", farmer), "_Report.html"
+    ),
+    execute_params = purrr::map2(
+      farmer, year,
+      \(x, y) list(farmer = x, year = y)
+    )
+  ) |> 
+  dplyr::select(output_file, execute_params)
+
+head(reports, 3)
+
+reports |>
+  purrr::pwalk(
+    quarto::quarto_render,
+    input = "template.qmd",
+    output_format = "html"  
+    )
+
+# Convert document with pandoc
+pandoc_convert(
+  input,
+  to = NULL,
+  from = NULL,
+  output = NULL,
+  citeproc = FALSE,
+  options = NULL,
+  verbose = FALSE,
+  wd = NULL
+)
+
+# Reorder x axis by another value
 data |>  arrange(desc(value)) |>  
   mutate(x = factor(x, levels = unique(x))) |> 
   ggplot()
