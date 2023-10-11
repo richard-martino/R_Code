@@ -7,16 +7,20 @@
 - [Observable plot Javascript](https://observablehq.com/plot/what-is-plot)
 - [Awesome Quarto](https://github.com/mcanouil/awesome-quarto)
 - lordicon, academicons, material-icons, and bsicons shortcode extensions
-- 
+- [Highcharter - not free for government use](https://jkunst.com/highcharter/)
+- [miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+- [duckDB](https://duckdb.org/)
+- [workflows - tidymodels](https://workflows.tidymodels.org/reference/workflows-package.html)
+- [applicable - tidymodels](https://applicable.tidymodels.org/)
 
 
 ## Resources
 
-- [](https://projects.susielu.com/viz-palette)
-- [](https://colourcontrast.cc/)
+- [palette](https://projects.susielu.com/viz-palette)
+- [Colour contrast](https://colourcontrast.cc/)
 - [snippets](https://gist.github.com/jthomasmock)
-- [](https://www.youtube.com/@ggnot2)
-- [](https://www.youtube.com/watch?v=QU8wSya-Y9E)
-- [](https://emilhvitfeldt.com/post/slidecraft-colors-fonts/)
-- [](https://typst.app/)
+- [ggnot2](https://www.youtube.com/@ggnot2)
+- [html css](https://www.youtube.com/watch?v=QU8wSya-Y9E)
+- [viz](https://emilhvitfeldt.com/post/slidecraft-colors-fonts/)
+- [typst](https://typst.app/)
 - 
