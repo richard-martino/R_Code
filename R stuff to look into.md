@@ -38,6 +38,7 @@
 - [Objectives and key results](https://www.atlassian.com/team-playbook/plays/okrs)
 - [Best Practices for Data Visualisation](https://royal-statistical-society.github.io/datavisguide/)
 - [from data to viz](https://www.data-to-viz.com/)
+- [Vector review](https://www.noamross.net/archives/2014-04-16-vectorization-in-r-why/)
 - [devtools](https://devtools.r-lib.org/)
 - [R package book](https://r-pkgs.org/)
 - [Vulnerability database](https://osv.dev/)
