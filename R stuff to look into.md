@@ -24,6 +24,10 @@
 - [Crew packages](https://github.com/wlandau/crew)
 - [withr package](https://cran.r-project.org/web/packages/withr/index.html)
 - [sass](https://rstudio.github.io/sass/articles/sass.html)
+- [jthomasmock](https://gist.github.com/jthomasmock)
+- [unpivotr package](https://nacnudus.github.io/unpivotr/index.html)
+- [targets package](https://docs.ropensci.org/targets/)
+- 
 
 
 ## Resources
@@ -32,8 +36,8 @@
 - [Colour contrast](https://colourcontrast.cc/)
 - [snippets](https://gist.github.com/jthomasmock)
 - [ggnot2](https://www.youtube.com/@ggnot2)
-- [html css](https://www.youtube.com/watch?v=QU8wSya-Y9E)
-- [viz](https://emilhvitfeldt.com/post/slidecraft-colors-fonts/)
+- [Albert Rapp html css](https://www.youtube.com/watch?v=QU8wSya-Y9E)
+- [Slidecraft 101 viz](https://emilhvitfeldt.com/post/slidecraft-colors-fonts/)
 - [typst](https://typst.app/)
 - [Objectives and key results](https://www.atlassian.com/team-playbook/plays/okrs)
 - [Best Practices for Data Visualisation](https://royal-statistical-society.github.io/datavisguide/)
@@ -43,3 +47,12 @@
 - [R package book](https://r-pkgs.org/)
 - [Vulnerability database](https://osv.dev/)
 - [Efficent R programming](https://csgillespie.github.io/efficientR/introduction.html)
+- [edav.info v2](https://edav.info/)
+- [R6](https://jiwanheo.rbind.io/post/2022-02-06-pass-around-data-between-shiny-modules-with-r6/#:~:text=To%20use%20R6%20in%20your,it%20updates%20r6%27s%20name%20field.)
+- [Creating a website with Quarto](https://ucsb-meds.github.io/creating-quarto-websites/)
+- [Customizing Quarto websites](https://ucsb-meds.github.io/customizing-quarto-websites)
+- [RStudio Education](https://education.rstudio.com/teach/how-to-teach/)
+- [Great website example](https://github.com/andrewheiss/ath-quarto)
+- [Introduction to public speaking](https://www.coursera.org/learn/public-speaking)
+- [Public speaking tips](https://speaking.io/)
+- [Leek group guide to giving talks](https://github.com/jtleek/talkguide)
