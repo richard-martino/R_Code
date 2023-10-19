@@ -27,7 +27,8 @@
 - [jthomasmock](https://gist.github.com/jthomasmock)
 - [unpivotr package](https://nacnudus.github.io/unpivotr/index.html)
 - [targets package](https://docs.ropensci.org/targets/)
-- 
+- [R i/o](https://github.com/gesistsa/rio)
+- [Provis graph sys time](http://rstudio.github.io/profvis/)
 
 
 ## Resources
