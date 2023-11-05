@@ -23,6 +23,27 @@ reports |>
     output_format = "html"  
     )
 
+## Other method
+
+purrr::walk2(params$year, params$state, ~quarto::quarto_render(
+  input = "slides.qmd",
+  execute_params = list("year" = .x,
+                        "state" = .y),
+  output_file = glue::glue("{.y}_{.x}.html")
+))
+
+## other method moves file
+# in a single for loop
+#  1. define subgroup
+#  2. render output (may need to change quarto to rmd)
+for (id in unique(ID)){
+    subgroup <- data[dataID == id,]
+    quarto::quarto_render(input = "qmd file",
+                          output_file = paste0(id, 'Name.html'),
+                          execute_params = list(dataID = id))
+    fs::file_move(paste0(here::here(),'/',id, '_Name.html'),paste0(here::here(),'/Foldername'))
+}
+
 # Convert document with pandoc
 pandoc_convert(
   input,
