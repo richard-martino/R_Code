@@ -6,7 +6,7 @@
 - [Bootstrap themes bslib](https://rstudio.github.io/bslib/)
 - [Observable plot Javascript](https://observablehq.com/plot/what-is-plot)
 - [Awesome Quarto](https://github.com/mcanouil/awesome-quarto)
-- lordicon, academicons, material-icons, and bsicons shortcode extensions
+- lordicon, academicons, material-icons, and bsicons shortcode extensions (Non r extension: iconduck)
 - [plotly](https://plotly.com/r/getting-started/)
 - [Crosstalk](https://rstudio.github.io/crosstalk/)
 - [Highcharter - not free for government use](https://jkunst.com/highcharter/)
