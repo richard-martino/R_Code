@@ -149,7 +149,15 @@ attr(data$dateTime, "tzone") <- "Europe/Paris"
 force_tz(y, "America/New_York", roll=TRUE)
 with_tz(time, tzone = "")
 
+# Text search in list case_when mutate
+list <- c("a","b")
 
+data <- data |> 
+  mutate(
+    var2 = case_when(
+      stringr::str_detect(var,paste(list,collapse="|")) ~ 1,
+      !is.na(var) ~ 0)
+    )
 
 ##Old code pre-2021: 
 #Set Working directory
