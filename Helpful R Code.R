@@ -165,6 +165,9 @@ data <- data |>
 ## Change plot margins
 + theme(plot.margin=margin(t,r,b,l,"cm"))
 
+## Zoom into or out of graph
++ coord_cartesian(ylim = c(min,max),  expand = TRUE)
+
 ## Merge patchwork legends and move to bottom
 chart1 + chart2 + chart3 + chart4 +  
   plot_layout (axis_titles = "collect", guides = 'collect') & 
