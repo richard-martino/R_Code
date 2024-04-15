@@ -159,6 +159,22 @@ data <- data |>
       !is.na(var) ~ 0)
     )
 
+
+# ggplot2
+
+## Change plot margins
++ theme(plot.margin=margin(t,r,b,l,"cm"))
+
+## Merge patchwork legends and move to bottom
+chart1 + chart2 + chart3 + chart4 +  
+  plot_layout (axis_titles = "collect", guides = 'collect') & 
+  theme(legend.position = 'bottom',
+        plot.margin=unit(c(7,0,7,0),"pt"),  # unit(c(top, right, bottom, left), units) 
+        axis.title.x = element_text(size = 9),
+        axis.title.y = element_text(size = 9), 
+        legend.text = element_text(size = 9))
+
+
 ##Old code pre-2021: 
 #Set Working directory
 setwd("/")
