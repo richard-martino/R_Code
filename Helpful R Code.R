@@ -1,5 +1,21 @@
 #Useful code
 
+# Tables
+# Create blank rows for column groups gt table
+
+library(gt)
+library(dplyr)
+
+gtcars %>%
+  mutate(mfr = factor(mfr, levels = unique(mfr))) %>%  ## keep the original order
+  arrange(mfr, year) %>%   
+  mutate(year = ifelse(row_number() == 1, as.character(year), ""),
+         .by = c(mfr, year)) %>% 
+  mutate(mfr = ifelse(row_number() == 1, as.character(mfr), ""),
+         .by = mfr) %>% 
+  select(mfr, year, everything()) %>% 
+  gt()
+
 # Create multiple quarto parameter reports
 reports <- data |>
   dplyr::distinct(farmer, year) |>
