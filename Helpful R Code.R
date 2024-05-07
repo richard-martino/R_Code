@@ -1,5 +1,11 @@
 #Useful code
 
+# Regex list
+regex_list <- list(date = '(^20[1,2][0-9]\\-)|(\\/20[1,2][0-9]$)', 
+                  numericScientificNotation = '\\d\\.\\d{3}[eE][+-]\\d{2}+', 
+                  batches = '(^[a-zA-Z][0-9]{2}\\/2[0-1]{1}$)|(^[A-Z]{1,2}\\-\\d.*[a-zA-Z]*$)|(^[a-zA-Z][0-9]{2})|(^[A-Z][0-9]$)', 
+                  integers = '^-?\\d+$')
+
 # Tables
 # Create blank rows for column groups gt table
 
