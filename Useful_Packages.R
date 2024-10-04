@@ -116,7 +116,10 @@ remotes::install_github("r4epi/sitrep") #Outbreak and Survey templates based on 
 
   #Time series - Javascript
   install.packages("dygraphs")
-  
+
+# Interactive graphs
+install.packages("ggiraph")
+install.packages("plotly")
 
 #graphics device for R that is accessible via network protocols / easily view graphs in browsers and download
 install.packages("httpgd")
