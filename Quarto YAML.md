@@ -12,6 +12,10 @@ format:
   params:
   execute:
     echo: false
+knitr:
+  opts_chunk:
+    dev: "ragg_png"
+    dpi: 300
       
 
 
