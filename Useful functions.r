@@ -20,7 +20,7 @@ inc_rate_table <- function(df, .cases, .population, .per_num, .grouper){
     mutate(across(everything(), ~ round(.x, 1))) |> 
     mutate("{{.cases}}_ci" := paste0("[", lower, ", ", upper,"]")) |> 
     select(-c(lower, upper)) |> 
-    rename("{{.cases}}_est" := est)
+    rename("{{.cases}}_est_{{.per_num}}" := est)
     
   
   df5 <- cbind(df_grouper, df4) |> select(-c({{.population}}))
