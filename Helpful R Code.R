@@ -1,5 +1,8 @@
 #Useful code
 
+# Number of unique 
+length(unique(data$var))
+
 # Regex list
 regex_list <- list(date = '(^20[1,2][0-9]\\-)|(\\/20[1,2][0-9]$)', 
                   numericScientificNotation = '\\d\\.\\d{3}[eE][+-]\\d{2}+', 
@@ -199,6 +202,20 @@ chart1 + chart2 + chart3 + chart4 +
         axis.title.y = element_text(size = 9), 
         legend.text = element_text(size = 9))
 
+## Change axis limits and force show all years
++
+  scale_x_continuous(n.breaks = year_range) +
+  scale_y_continuous(limits = c(0, max(data$y_var) + 1),
+                     expand = expansion(mult = c(0, 0.1)),
+                     breaks = seq(0, max(data$y_var) + 1, by = 1)))
+
+
+# Numeric
+
+## Rounding to nearest
+round(123.456, -1) # round to nearest ten
+#> [1] 120
+round(123.456, -2) # round to nearest hundred
 
 ##Old code pre-2021: 
 #Set Working directory
