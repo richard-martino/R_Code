@@ -1,5 +1,12 @@
 #Useful code
 
+# Models
+## linear model 95% CI
+data <- data |> 
+  summarise(n = n(), .by = c(year, month)) |> 
+  summarise(mean = mean(n, na.rm = TRUE),
+            tidy(lm(n ~ 1), conf.int = TRUE, conf.level = 0.95),
+            .by = c(month)) 
 # Number of unique 
 length(unique(data$var))
 
@@ -186,6 +193,11 @@ data <- data |>
 
 
 # ggplot2
+
+## Change layer order
+p$layers <- c(geom_errorbar(data = data,
+                aes(x = x, ymin = low, ymax = high, colour = group), size = 1, width = .5),
+                p$layers)
 
 ## Change plot margins
 + theme(plot.margin=margin(t,r,b,l,"cm"))
