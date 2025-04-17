@@ -221,6 +221,16 @@ chart1 + chart2 + chart3 + chart4 +
                      expand = expansion(mult = c(0, 0.1)),
                      breaks = seq(0, max(data$y_var) + 1, by = 1)))
 
+## Scale plot during save
+ggsave(
+  pngfile, 
+  p, 
+  device = agg_png, 
+  width = 10, height = 6, units = "cm", res = 300,
+  scaling = 0.5
+)
+
+https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/
 
 # Numeric
 
