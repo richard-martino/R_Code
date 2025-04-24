@@ -91,6 +91,9 @@ remotes::install_github("r4epi/sitrep") #Outbreak and Survey templates based on 
   #Fit texts into boxes
   install.packages("ggfittext")
 
+  # Markdown text within ggplot2
+  install.packages("ggtext")
+
   #ggplot2 arranging plots
   install.packages("patchwork")
   #ggplot2 arrange plots and themes
