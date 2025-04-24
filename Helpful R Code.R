@@ -2,7 +2,11 @@
 
 # Show warnings
 options(lifecycle_verbosity = "warning")
-options("lifecycle_verbosity" = "error")
+options(lifecycle_verbosity = "error")
+
+options(rlib_warning_verbosity = "verbose")
+
+getOption("lifecycle_verbosity")
 
 
 # Models
