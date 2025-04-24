@@ -1,5 +1,10 @@
 #Useful code
 
+# Show warnings
+options(lifecycle_verbosity = "warning")
+options("lifecycle_verbosity" = "error")
+
+
 # Models
 ## linear model 95% CI
 data <- data |> 
