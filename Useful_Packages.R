@@ -11,7 +11,11 @@ install.packages("renv")
 install.packages("pak")
 install.packages("pacman")
 
-#Set WD
+# PDF
+install.packages("qpdf")
+install.packages("pdftools")
+
+# WD
 install.packages("here")
 
 #Tidyverse
