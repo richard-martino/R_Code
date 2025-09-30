@@ -229,6 +229,13 @@ chart1 + chart2 + chart3 + chart4 +
   scale_y_continuous(limits = c(0, max(data$y_var) + 1),
                      expand = expansion(mult = c(0, 0.1)),
                      breaks = seq(0, max(data$y_var) + 1, by = 1)))
+  ### Better method
++ scale_x_date(date_breaks = "1 year", date_label = "%Y")
+
+## Set Y-axis breaks
++   scale_y_continuous(labels = scales::percent,
+                     limits = c(0, 1),
+                     breaks = seq(0, 1, by = 0.05)) 
 
 ## Scale plot during save
 ggsave(
