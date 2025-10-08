@@ -156,7 +156,7 @@ tbl_with_sources <-
     map_df(~read_plus(.))
 
 #read in all xlsx files
-file.list <- list.files(pattern = '*.xlsx')
+file.list <- list.files(pattern = '*.xlsx') # Add path and full.names = TRUE if data is in subfolder
 file.list <- setNames(file.list, file.list)
 df.list <- lapply(file.list, read_excel, sheet = "Sheet 1", range = "A3:M50", col_types = "text")
 df.list <- Map(function(df, name) {
@@ -357,3 +357,4 @@ unfill_vec <- function(x) {
 
 x <- c("A","A","A","B","B","C","C")
 unfill_vec(x)
+
