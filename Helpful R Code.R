@@ -163,7 +163,7 @@ df.list <- Map(function(df, name) {
   df$source_name <- name
   df
 }, df.list, names(df.list))
-df <- rbindlist(df.list, fill=TRUE)
+df <- data.table::rbindlist(df.list, fill=TRUE)
 
 #convert excel date number to date
 df4 <- df3 %>% mutate(DOB = as.Date(DOB, origin = "1899-12-30"))
@@ -357,4 +357,5 @@ unfill_vec <- function(x) {
 
 x <- c("A","A","A","B","B","C","C")
 unfill_vec(x)
+
 
