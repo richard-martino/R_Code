@@ -248,6 +248,26 @@ ggsave(
 
 https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/
 
+## Pop out map
+popout_map <- function(df, .var_fill, .legend_text) {
+  ggplot(df) +
+    geom_sf(mapping = aes(fill = {{.var_fill}}, geometry = geometry)) +
+    coord_sf(xlim = c(144, 150), ylim = c(-39.7, -44), crs = sf::st_crs(4326)) +
+    theme_void() +
+    scale_fill_gradient2() +
+    #scale_fill_brewer() +
+    #scale_fill_distiller(direction = -1) +
+    theme(strip.text.x = element_blank(),
+          strip.background = element_blank(),
+          legend.position = "inside",
+          legend.position.inside = c(.88, .7)) +
+    labs(fill = .legend_text) +
+    ggmagnify::geom_magnify(from = c(147, 147.6, -42.65, -43.5), to = c(148.7, 150, -42, -43.7),
+                            aspect = "fixed", expand = 0)
+}
+
+popout_map(data, rate, "rate per 1,000 persons")
+
 # Numeric
 
 ## Rounding to nearest
@@ -357,5 +377,6 @@ unfill_vec <- function(x) {
 
 x <- c("A","A","A","B","B","C","C")
 unfill_vec(x)
+
 
 
