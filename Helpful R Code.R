@@ -214,6 +214,11 @@ p$layers <- c(geom_errorbar(data = data,
 ## Zoom into or out of graph
 + coord_cartesian(ylim = c(min,max),  expand = TRUE)
 
+## Remove spacing between x-axis and x-axis ticks
+### https://stackoverflow.com/questions/22945651/remove-space-between-plotted-data-and-the-axes
+scale_y_continuous(limits = c(0, NA),
+                       expand = c(0, 0)) + # Removes space between x-axis and ticks
+
 ## Merge patchwork legends and move to bottom
 chart1 + chart2 + chart3 + chart4 +  
   plot_layout (axis_titles = "collect", guides = 'collect') & 
@@ -377,6 +382,7 @@ unfill_vec <- function(x) {
 
 x <- c("A","A","A","B","B","C","C")
 unfill_vec(x)
+
 
 
 
