@@ -384,6 +384,7 @@ x <- c("A","A","A","B","B","C","C")
 unfill_vec(x)
 
 # Read and split XML column
+## https://stackoverflow.com/questions/67024703/parsing-single-column-of-xml-in-data-frame
 
 data <- data |> 
   mutate(
@@ -394,6 +395,7 @@ data <- data |>
     XLMvar3 = map(XLMcolumn2, ~xml_find_all(.x, ".//group_name3") |>  xml_text()),
   ) |> 
   unnest(c(XLMvar1, XLMvar2, XLMvar3))
+
 
 
 
