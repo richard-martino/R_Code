@@ -383,6 +383,17 @@ unfill_vec <- function(x) {
 x <- c("A","A","A","B","B","C","C")
 unfill_vec(x)
 
+# Read and split XML column
+
+data <- data |> 
+  mutate(
+    XLMcolumn2 = paste0("<Data>",XLMcolumn,"</Data>"),
+    XLMcolumn2 = map(XLMcolumn2, read_xml),
+    XLMvar1 = map(XLMcolumn2, ~xml_find_all(.x, ".//group_name1") |>  xml_text()),
+    XLMvar2 = map(XLMcolumn2, ~xml_find_all(.x, ".//group_name2") |>  xml_text()),
+    XLMvar3 = map(XLMcolumn2, ~xml_find_all(.x, ".//group_name3") |>  xml_text()),
+  ) |> 
+  unnest(c(XLMvar1, XLMvar2, XLMvar3))
 
 
 
