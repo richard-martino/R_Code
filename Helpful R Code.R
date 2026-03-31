@@ -190,6 +190,7 @@ attr(data$dateTime, "tzone") <- "Europe/Paris"
 force_tz(y, "America/New_York", roll=TRUE)
 with_tz(time, tzone = "")
 
+
 # Text search in list case_when mutate
 list <- c("a","b")
 
@@ -199,6 +200,14 @@ data <- data |>
       stringr::str_detect(var,paste(list,collapse="|")) ~ 1,
       !is.na(var) ~ 0)
     )
+
+# Search across columns
+mutate(
+    var = case_when(
+      if_any(VAR1:VAR100, ~ stringr::str_detect(.,
+                                             regex(paste(list, collapse="|"),
+                                                   ignore_case = TRUE))) ~ 1,
+      .default = 0))
 
 
 # ggplot2
