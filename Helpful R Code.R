@@ -11,6 +11,13 @@ getOption("lifecycle_verbosity")
 # Update all outdated packages with pak
 pak::pkg_install( unname( old.packages()[ , "Package"] ) )
 
+# Load all packages
+# Listing packages
+packages <- installed.packages()
+
+# Loading first 5 packages for testing
+lapply(packages[1:5], require, character.only = TRUE)
+
 # Models
 ## linear model 95% CI
 data <- data |> 
