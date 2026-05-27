@@ -8,6 +8,8 @@ options(rlib_warning_verbosity = "verbose")
 
 getOption("lifecycle_verbosity")
 
+# Update all outdated packages with pak
+pak::pkg_install( unname( old.packages()[ , "Package"] ) )
 
 # Models
 ## linear model 95% CI
